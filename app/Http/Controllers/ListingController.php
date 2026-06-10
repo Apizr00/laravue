@@ -35,7 +35,6 @@ class ListingController extends Controller
    */
   public function store(Request $request)
   {
-
     // $request->validate([
     //   'beds' => 'required|integer',
     //   'baths' => 'required|integer',
