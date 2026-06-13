@@ -4,7 +4,7 @@
             <div class="col-span-2">
                 <label class="label">Beds</label>
                 <input v-model.number="form.beds" type="text" class="input" />
-                <div v-if="form.errors.beds" style="color: red">
+                <div v-if="form.errors.beds">
                     {{ form.errors.beds }}
                 </div>
             </div>
@@ -19,7 +19,7 @@
                     type="text"
                     class="block w-full p-2 rounded-md shadow-sm border border-gray-300 dark:border-gray-600 text-gray-500"
                 />
-                <div v-if="form.errors.baths" style="color: red">
+                <div v-if="form.errors.baths">
                     {{ form.errors.baths }}
                 </div>
             </div>
@@ -34,7 +34,7 @@
                     type="text"
                     class="block w-full p-2 rounded-md shadow-sm border border-gray-300 dark:border-gray-600 text-gray-500"
                 />
-                <div v-if="form.errors.area" style="color: red">
+                <div v-if="form.errors.area" class="input-error">
                     {{ form.errors.area }}
                 </div>
             </div>
@@ -49,7 +49,7 @@
                     type="text"
                     class="block w-full p-2 rounded-md shadow-sm border border-gray-300 dark:border-gray-600 text-gray-500"
                 />
-                <div v-if="form.errors.city" style="color: red">
+                <div v-if="form.errors.city" class="input-error">
                     {{ form.errors.city }}
                 </div>
             </div>
@@ -64,7 +64,7 @@
                     type="text"
                     class="block w-full p-2 rounded-md shadow-sm border border-gray-300 dark:border-gray-600 text-gray-500"
                 />
-                <div v-if="form.errors.code" style="color: red">
+                <div v-if="form.errors.code" class="input-error">
                     {{ form.errors.code }}
                 </div>
             </div>
@@ -79,7 +79,7 @@
                     type="text"
                     class="block w-full p-2 rounded-md shadow-sm border border-gray-300 dark:border-gray-600 text-gray-500"
                 />
-                <div v-if="form.errors.street" style="color: red">
+                <div v-if="form.errors.street" class="input-error">
                     {{ form.errors.street }}
                 </div>
             </div>
@@ -94,7 +94,7 @@
                     type="text"
                     class="block w-full p-2 rounded-md shadow-sm border border-gray-300 dark:border-gray-600 text-gray-500"
                 />
-                <div v-if="form.errors.street_nr" style="color: red">
+                <div v-if="form.errors.street_nr" class="input-error">
                     {{ form.errors.street_nr }}
                 </div>
             </div>
@@ -109,7 +109,7 @@
                     type="text"
                     class="block w-full p-2 rounded-md shadow-sm border border-gray-300 dark:border-gray-600 text-gray-500"
                 />
-                <div v-if="form.errors.price" style="color: red">
+                <div v-if="form.errors.price" class="input-error">
                     {{ form.errors.price }}
                 </div>
             </div>
