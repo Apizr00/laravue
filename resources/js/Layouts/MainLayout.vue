@@ -40,16 +40,4 @@ import { Link, usePage } from "@inertiajs/vue3";
 
 const page = usePage();
 const flashSuccess = computed(() => page.props.flash.success);
-const flashError = computed(() => page.props.flash.error);
 </script>
-
-<style scoped>
-.success {
-    background-color: green;
-    color: white;
-}
-.error {
-    background-color: red;
-    color: white;
-}
-</style>
