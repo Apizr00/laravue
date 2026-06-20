@@ -26,9 +26,8 @@ class ListingController extends Controller
 
   public function store(Request $request)
   {
-    Listing::create([
-      ...$request->all(),
-      ...$request->validate([
+    $request->user()->listings()->create(
+      $request->validate([
         'beds' => 'required|integer|min:0|max:20',
         'baths' => 'required|integer|min:0|max:20',
         'area' => 'required|integer|min:15|max:1500',
@@ -38,10 +37,10 @@ class ListingController extends Controller
         'street_nr' => 'required|min:1|max:1000',
         'price' => 'required|integer|min:1|max:20000000',
       ])
-    ]);
+    );
 
     return redirect()->route('listing.index')
-      ->with('success', 'Listing created successfully.');
+      ->with('success', 'Listing was created!');
   }
 
   public function show(Listing $listing)
