@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
-
+        @routes
         @vite('resources/js/app.js')
         <x-inertia::head />
 
     </head>
-    <body>
+    <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-300">
         <x-inertia::app />
     </body>
 </html>
